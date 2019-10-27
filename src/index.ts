@@ -1,4 +1,9 @@
-import { BOT_OPTIONS_CONSTANTS, IBotOptionsConstantsType } from './OPTIONS';
-import Client from './lib/structures/Client';
 
-export { Client, BOT_OPTIONS_CONSTANTS, IBotOptionsConstantsType };
+import '@tensorflow/tfjs-node';
+
+import { OPTIONS_CONSTANTS } from './OPTIONS';
+import { Tensor } from './lib/NN/tfjs';
+
+const tensor = new Tensor('Test', OPTIONS_CONSTANTS.epoch);
+
+tensor.fit().then(console.log.bind(this));

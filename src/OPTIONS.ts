@@ -1,7 +1,7 @@
-export interface IBotOptionsConstantsType {
-  token: string;
+export interface IOptionsConstantsType {
+  epoch: number;
 }
 
-export const BOT_OPTIONS_CONSTANTS: IBotOptionsConstantsType = {
-  token: ''
+export const OPTIONS_CONSTANTS: IOptionsConstantsType = {
+  epoch: 1000
 };

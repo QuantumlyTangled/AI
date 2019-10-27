@@ -6,24 +6,18 @@
   "author": "QuantumlyTangled",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "node dist/bot.js",
-    "build": "tsc -p ."
+    "node::start": "node dist/index.js",
+    "ts::build": "tsc -p ."
   },
   "dependencies": {
-    "@tensorflow/tfjs": "^1.0.4",
-    "@tensorflow/tfjs-node": "^1.0.3",
-    "discord.js": "discordjs/discord.js",
-    "klasa": "dirigeants/klasa"
+    "@tensorflow/tfjs-node": "1.2.11"
   },
   "devDependencies": {
-    "@types/natural": "^0.2.33",
     "@types/node": "^11.12.2",
-    "@types/ws": "^6.0.1",
-    "@typescript-eslint/eslint-plugin": "^1.10.2",
-    "@typescript-eslint/parser": "^1.10.2",
-    "eslint": "^5.16.0",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.1.1",
-    "typescript": "^3.5.1"
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "eslint": "^6.5.1",
+    "eslint-config-bamboo": "^3.0.0",
+    "typescript": "^3.7.0-beta"
   }
 }

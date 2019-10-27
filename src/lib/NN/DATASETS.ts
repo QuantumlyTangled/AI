@@ -1,5 +1,3 @@
-import { Collection } from 'discord.js';
-
 export const RATINGS = Object.freeze({
   POSITIVE: [1, 0, 0],
   NEGATIVE: [0, 1, 0],
@@ -51,7 +49,7 @@ export const VOCABULARY: string[] = [
   'new', 'update', '%OTHERGAMES%', 'decent', 'awesome', 'cool', 'think', 'better', 'favorite', 'ass', 'rat'
 ];
 
-export const REPLACE_SETS = new Collection<string, string[]>([
+export const REPLACE_SETS = new Map<string, string[]>([
   ['%GAME%', ['vg', 'vainglory']],
   ['%OTHERGAMES%', ['fortnite', 'coc', 'clashofclans', 'csgo', 'cs:go', 'snake', 'minecraft', 'mc', 'roblox']],
   ['%SERVER%', ['server', 'servers']]
